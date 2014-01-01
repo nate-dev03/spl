@@ -102,6 +102,11 @@ export default class Parser {
     switch (tk) {
       case TokenType.Identifier:
         return { kind: "Identifier", symbol: this.eat().value } as Identifier;
+
+      case TokenType.Null:
+        this.eat(); // Advance past null keyword
+        return { kind: "NullLiteral", vaue: "null" } as NullLiteral;
+
       case TokenType.Number:
         return {
           kind: "NumericLiteral",
