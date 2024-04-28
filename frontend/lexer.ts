@@ -14,12 +14,12 @@ export enum TokenType {
 }
 
 const KEYWORDS: Record<string, TokenType> = {
-  "let": TokenType.Let
-}
+  "let": TokenType.Let,
+};
 
 export interface Token {
-  type: TokenType,
-  value: string
+  type: TokenType;
+  value: string;
 }
 
 function token(type: TokenType, value = ""): Token {
@@ -49,7 +49,10 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.OpenParen, char));
     } else if (char === ")") {
       tokens.push(token(TokenType.CloseParen, char));
-    } else if (char === "+" || char === "-" || char === "*" || char === "/") {
+    } else if (
+      char === "+" || char === "-" || char === "*" || char === "/" ||
+      char === "%"
+    ) {
       tokens.push(token(TokenType.BinaryOperator, char));
     } else if (char === "=") {
       tokens.push(token(TokenType.Equals, char));
@@ -70,7 +73,10 @@ export function tokenize(sourceCode: string): Token[] {
       // Build identifier token
       if (isAlpha(char)) {
         let ident = "";
-        while (index < sourceCode.length && (isAlpha(sourceCode[index]) || isInt(sourceCode[index]))) {
+        while (
+          index < sourceCode.length &&
+          (isAlpha(sourceCode[index]) || isInt(sourceCode[index]))
+        ) {
           ident += sourceCode[index];
           index++;
         }
@@ -97,7 +103,6 @@ export function tokenize(sourceCode: string): Token[] {
     index++;
   }
 
-  tokens.push({type: TokenType.EOF, value: "EndOfFile"});
+  tokens.push({ type: TokenType.EOF, value: "EndOfFile" });
   return tokens;
 }
-
