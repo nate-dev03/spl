@@ -12,9 +12,16 @@ function eval_program(program: Program): RuntimeVal {
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
   let result = 0;
 
-  if (operator == "+") {
+  if (operator == "+")
     result = lhs.value + rhs.value;
-  }
+  else if (operator == "-")
+    result = lhs.value - rhs.value;
+  else if (operator == "*")
+    result = lhs.value * rhs.value;
+  else if (operator == "/")
+    result = lhs.value / rhs.value;
+  else
+    result = lhs.value % rhs.value;
 }
 
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
