@@ -14,18 +14,19 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
 
   if (operator == "+")
     result = lhs.value + rhs.value;
-  else if (operator == "-")
+  } else if (operator == "-")
     result = lhs.value - rhs.value;
-  else if (operator == "*")
+  } else if (operator == "*")
     result = lhs.value * rhs.value;
-  else if (operator == "/")
+  } else if (operator == "/")
     if (rhs.value != 0) {
       result = lhs.value / rhs.value;
     } else {
       console.error("Invalid: division by zero");
     }
-  else
+  } else
     result = lhs.value % rhs.value;
+  }
 }
 
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
