@@ -19,8 +19,11 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
   else if (operator == "*")
     result = lhs.value * rhs.value;
   else if (operator == "/")
-    // TODO: Division by zero checks
-    result = lhs.value / rhs.value;
+    if (rhs.value != 0) {
+      result = lhs.value / rhs.value;
+    } else {
+      console.error("Invalid: division by zero");
+    }
   else
     result = lhs.value % rhs.value;
 }
