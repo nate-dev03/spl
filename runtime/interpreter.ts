@@ -10,7 +10,7 @@ function eval_program(program: Program): RuntimeVal {
 }
 
 function eval_numeric_binary_expr(lhs: NumerVal, rhs: NumberVal, operator: string): NumberVal {
-
+  
 }
 
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
