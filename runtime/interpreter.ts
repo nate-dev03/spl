@@ -12,6 +12,13 @@ function eval_program(program: Program): RuntimeVal {
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
   const lhs = evaluate(binop.left);
   const rhs = evaluate(binop.right);
+
+  if(lhs.type == "number" && rhs.type == "number") {
+    return eval_numeric_binary_expr(lhs as NumberVal, rhs as NumberVal);
+  }
+
+  // One or both are null
+  return { type: "null", value: "null" } as NullVal;
 }
 
 export function evaluate(astNode: Stmt): RuntimeVal {
