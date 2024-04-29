@@ -24,7 +24,7 @@ export function evaluate(astNode: Stmt): RuntimeVal {
       return eval_binary_expr(astNode as BinaryExpr);
 
     case "Program":
-
+      return eval_program(astNode as Program);
 
     default:
       console.error("This AST Node as not yet been setup for interpretation.", astNode);
