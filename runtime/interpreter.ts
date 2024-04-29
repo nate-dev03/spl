@@ -1,7 +1,11 @@
 import { NullVal, NumberVal, RuntimeVal, ValueType } from "./value.ts";
 import { BinaryExpr, NodeType, NumericLiteral, Stmt } from "../frontend/ast.ts";
 
-function evaluate_binary_expr(binop: BinaryExpr): RuntimeVal {
+function eval_program(program: Program): RuntimeVal {
+
+}
+
+function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
 
 }
 
@@ -17,7 +21,10 @@ export function evaluate(astNode: Stmt): RuntimeVal {
       return { type: "null", value: "null" } as NullVal;
 
     case "BinaryExpr":
-      return evaluate_binary_expr(astNode as BinaryExpr);
+      return eval_binary_expr(astNode as BinaryExpr);
+
+    case "Program":
+
 
     default:
       console.error("This AST Node as not yet been setup for interpretation.", astNode);
