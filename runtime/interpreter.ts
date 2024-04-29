@@ -3,6 +3,8 @@ import { BinaryExpr, NodeType, NumericLiteral, Stmt } from "../frontend/ast.ts";
 
 function eval_program(program: Program): RuntimeVal {
   let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
+
+  return lastEvaluated;
 }
 
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
