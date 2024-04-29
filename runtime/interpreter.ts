@@ -12,19 +12,19 @@ function eval_program(program: Program): RuntimeVal {
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
   let result = 0;
 
-  if (operator == "+")
+  if (operator == "+") {
     result = lhs.value + rhs.value;
-  } else if (operator == "-")
+  } else if (operator == "-") {
     result = lhs.value - rhs.value;
-  } else if (operator == "*")
+  } else if (operator == "*") {
     result = lhs.value * rhs.value;
-  } else if (operator == "/")
+  } else if (operator == "/") {
     if (rhs.value != 0) {
       result = lhs.value / rhs.value;
     } else {
       console.error("Invalid: division by zero");
     }
-  } else
+  } else {
     result = lhs.value % rhs.value;
   }
 }
