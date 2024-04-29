@@ -3,11 +3,9 @@ import { BinaryExpr, NodeType, NumericLiteral, Stmt } from "../frontend/ast.ts";
 
 function eval_program(program: Program): RuntimeVal {
   let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
-
   for (const stmt of program.body) {
     lastEvaluated = evaluate(stmt);
   }
-
   return lastEvaluated;
 }
 
