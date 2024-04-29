@@ -1,7 +1,7 @@
 SPL - Simple Programming Language (WIP)
 
 Features:
-- Basic Arithmetic Operations (WIP - 20%)
+- Basic Arithmetic Operations (WIP - 100%)
 - Support for Statements like `let` (WIP - 0%)
 - Function Calls and Declarations (WIP - 0%)
 
