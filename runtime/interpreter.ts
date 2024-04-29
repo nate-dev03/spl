@@ -10,7 +10,8 @@ function eval_program(program: Program): RuntimeVal {
 }
 
 function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
-  
+  const lhs = evaluate(binop.left);
+  const rhs = evaluate(binop.right);
 }
 
 export function evaluate(astNode: Stmt): RuntimeVal {
