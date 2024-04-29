@@ -16,13 +16,10 @@ export function evaluate(astNode: Stmt): RuntimeVal {
         type: "number",
         value: ((astNode as NumericLiteral).value),
       } as NumberVal;
-
     case "NullLiteral":
       return { type: "null", value: "null" } as NullVal;
-
     case "BinaryExpr":
       return eval_binary_expr(astNode as BinaryExpr);
-
     case "Program":
       return eval_program(astNode as Program);
 
