@@ -9,7 +9,7 @@ function eval_program(program: Program): RuntimeVal {
   return lastEvaluated;
 }
 
-function eval_numeric_binary_expr(lhs: NumerVal, rhs: NumberVal, operator: string): NumberVal {
+function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
   
 }
 
