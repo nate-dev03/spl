@@ -19,6 +19,7 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
   else if (operator == "*")
     result = lhs.value * rhs.value;
   else if (operator == "/")
+    // TODO: Division by zero checks
     result = lhs.value / rhs.value;
   else
     result = lhs.value % rhs.value;
