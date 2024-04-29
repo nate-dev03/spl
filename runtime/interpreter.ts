@@ -10,7 +10,7 @@ function eval_program(program: Program): RuntimeVal {
 }
 
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
-  let result: number;
+  let result: number = 0;
 
   if (operator == "+") {
     result = lhs.value + rhs.value;
