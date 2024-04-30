@@ -62,7 +62,8 @@ export default class Parser {
   parse_var_declaration(): Stmt {
     const isConstant = this.eat().type === TokenType.Const
     const identifier = this.expect(TokenType.Identifier,
-       "Expected identifier name following let | const keywords.").value;
+       "Expected identifier name following let | const keywords."
+      ).value;
 
   }
 
