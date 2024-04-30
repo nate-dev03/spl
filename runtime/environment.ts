@@ -11,7 +11,7 @@ export default class Environment {
         this.variables = new Map();
     }
 
-    public declareVar(varname: string, value: RuntimeVal): RuntimeVal {
+    public declareVar(varname: string, value: RuntimeVal, constant: boolean): RuntimeVal {
         if (this.variables.has(varname)) {
             throw `Cannot declare variable ${varname}. As it already defined.`;
         }
