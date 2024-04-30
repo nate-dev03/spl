@@ -21,5 +21,7 @@ export default class Environment {
         return value;
     }
 
-    public assignVar()
+    public assignVar(varname: string, value: RuntimeVal): RuntimeVal {
+        
+    }
 }
