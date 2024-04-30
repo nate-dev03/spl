@@ -13,3 +13,5 @@ export interface NumberVal extends RuntimeVal {
   type: "number";
   value: number;
 }
+
+export function MK_NUMBER()
