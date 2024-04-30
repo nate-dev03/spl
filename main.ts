@@ -16,7 +16,7 @@ function repl() {
   const parser = new Parser();
   const env = new Environment();
   
-  /
+  // Create a default environment
   env.declareVar("true", MK_BOOL(true), true);
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
