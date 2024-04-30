@@ -58,3 +58,8 @@ export interface ObjectLiteral extends Expr {
   kind: "ObjectLiteral";
   props: Property[]
 }
+
+export interface ObjectLiteral extends Expr {
+  kind: "ObjectLiteral";
+  props: Property[]
+}
