@@ -114,6 +114,7 @@ export default class Parser {
     return left;
   }
   private parse_object_expr(): Expr {
+    // { Prop[] }
     if (this.at().type !== TokenType.OpenBrace) {
       return this.parse_additive_expr();
     }
