@@ -14,6 +14,7 @@ repl();
 function repl() {
   const parser = new Parser();
   const env = new Environment();
+  env.declareVar("x", )
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
