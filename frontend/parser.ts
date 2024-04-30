@@ -51,8 +51,7 @@ export default class Parser {
   }
 
   private parse_stmt(): Stmt {
-    // skip to parse_expr
-    return this.parse_expr();
+    sw
   }
 
   private parse_expr(): Expr {
