@@ -88,6 +88,8 @@ export default class Parser {
       value: this.parse_expr(),
       constant: isConstant,
     } as VarDeclaration;
+
+    
   }
 
   private parse_expr(): Expr {
