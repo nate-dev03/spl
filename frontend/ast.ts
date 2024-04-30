@@ -17,7 +17,7 @@ export interface Program extends Stmt {
   body: Stmt[];
 }
 
-export interface VarDeclaration extends Stmt {
+export interface VariableDeclaration extends Stmt {
   kind: "VariableDeclaration";
   body: Stmt[];
 }
