@@ -72,7 +72,9 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.Equals, char));
     }  else if (char === ";") {
       tokens.push(token(TokenType.Semicolon, char));
-    } else if (c)
+    } else if (char == ":") {
+      tokens.push(token(TokenType.Colon, char));
+    }
     // Handle multicharacter keywords, tokens, identifiers, etc.
     } else {
       // Handle multi-character tokens
