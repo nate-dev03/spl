@@ -107,7 +107,7 @@ export default class Parser {
       case TokenType.Number:
         return {
           kind: "NumericLiteral",
-          value: parseFloat(this.eat().value),
+          value: Number.parseFloat(this.eat().value),
         } as NumericLiteral;
 
       case TokenType.OpenParen: {
