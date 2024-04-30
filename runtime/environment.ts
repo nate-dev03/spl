@@ -29,6 +29,7 @@ export default class Environment {
     }
 
     public lookupVar(varname: string): RuntimeVal {
+        const env = this.resolve(varname);
         
     }
 
