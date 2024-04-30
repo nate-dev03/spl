@@ -112,7 +112,7 @@ export default class Parser {
     return left;
   }
   private parse_object_expr(): Expr {
-    throw new Error("Method not implemented.");
+    
   }
 
   private parse_additive_expr(): Expr {
