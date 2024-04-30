@@ -14,6 +14,7 @@ import {
 eval_assignment,
   eval_binary_expr,
   eval_identifier,
+  eval_object_expr,
 } from "./eval/expressions.ts";
 
 export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
@@ -25,6 +26,8 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
       } as NumberVal;
     case "Identifier":
       return eval_identifier(astNode as Identifier, env);
+    case "ObjectLiteral":
+      return eval_object_expr()
     case "AssignmentExpr":
       return eval_assignment(astNode as AssignmentExpr, env);
     case "BinaryExpr":
