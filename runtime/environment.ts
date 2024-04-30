@@ -30,6 +30,7 @@ export default class Environment {
             return this;
         }
 
-        
+        if (this.parent == undefined)
+            
     }
 }
