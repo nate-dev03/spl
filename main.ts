@@ -1,6 +1,7 @@
 import Parser from "./frontend/parser.ts";
 import Environment from "./runtime/environment.ts";
 import { evaluate } from "./runtime/interpreter.ts";
+import { NumberVal } from "./runtime/value.ts";
 
 /**
 const source = await Deno.readTextFile("./test.spl");
@@ -14,7 +15,7 @@ repl();
 function repl() {
   const parser = new Parser();
   const env = new Environment();
-  env.declareVar("x", { value: 100, type: 'number'})
+  env.declareVar("x", { value: 100, type: 'number'} as NumberVal);
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
