@@ -32,7 +32,7 @@ export default class Environment {
     
     // Cannot assign to constant
     if (env.constants.has(varname)) {
-        throw "Ca"
+        throw `Cannot reassign to vaariable 
     }
     
     env.variables.set(varname, value);
