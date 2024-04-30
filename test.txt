@@ -5,5 +5,4 @@ const obj = {
     complex: {
         bar: true,
     },
-    
-}
+};
