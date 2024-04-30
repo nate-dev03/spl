@@ -25,6 +25,7 @@ export default class Parser {
     return prev;
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   private expect(type: TokenType, err: any) {
     const prev = this.tokens.shift() as Token;
     if (!prev || prev.type !== type) {
