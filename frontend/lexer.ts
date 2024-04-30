@@ -9,9 +9,10 @@ export enum TokenType {
   CloseParen = 5,
 
   // Keywords
-  Let = 6, Const = 7,
+  Let,
+  Const = 7,
 
-  EOF = 8, // Signifies the end of file
+  EOF, // Signifies the end of file
 }
 
 const KEYWORDS: Record<string, TokenType> = {
