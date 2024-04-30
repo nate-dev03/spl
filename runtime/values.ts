@@ -19,7 +19,7 @@ export interface BoolVal extends RuntimeVal {
 }
 
 export function MK_BOOL() {
-  return { type: "null", value: null } as NullVal;
+  return { type: , value: null } as NullVal;
 }
 
 export interface NumberVal extends RuntimeVal {
