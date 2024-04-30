@@ -82,6 +82,7 @@ export default class Parser {
     }
 
     this.expect(TokenType.Equals, "Expected equals token following identifier in var declaration.");
+    
     const declaration = {
       kind: "VarDeclaration",
       value: this.parse_expr(),
