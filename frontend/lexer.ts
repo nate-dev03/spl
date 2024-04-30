@@ -13,8 +13,7 @@ export enum TokenType {
   Let,
   Const,
 
-  EOF,
-  Semicolon, // Signifies the end of file
+  EOF, // Signifies the end of file
 }
 
 const KEYWORDS: Record<string, TokenType> = {
