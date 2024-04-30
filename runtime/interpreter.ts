@@ -54,7 +54,7 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
     case "NullLiteral":
       return { type: "null", value: "null" } as NullVal;
     case "BinaryExpr":
-      return eval_binary_expr(astNode as BinaryExpr);
+      return eval_binary_expr(astNode as BinaryExpr, env);
     case "Program":
       return eval_program(astNode as Program);
 
