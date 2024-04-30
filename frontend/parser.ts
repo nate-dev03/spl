@@ -119,7 +119,10 @@ export default class Parser {
 
     this.eat(); // advance past open brace.
     const properties = new Array<Property>();
-    
+
+    while (this.not_eof() && this.at().type !== TokenType.CloseBrace) {
+      
+    }
   }
 
   private parse_additive_expr(): Expr {
