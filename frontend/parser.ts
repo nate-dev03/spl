@@ -69,6 +69,7 @@ export default class Parser {
       ).value;
 
     if (this.at().type === TokenType.Semicolon) {
+      
       if (isConstant) {
         throw "Must assign value to constant expression. No value provided.";
       }
