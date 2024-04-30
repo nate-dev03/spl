@@ -15,7 +15,6 @@ repl();
 function repl() {
   const parser = new Parser();
   const env = new Environment();
-  
 
   console.log("\nRepl v0.1");
   while (true) {
