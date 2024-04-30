@@ -1,5 +1,5 @@
 import Environment from "../environment.ts";
-import { MK_NULL } from "../values.ts";
+import { MK_NULL, RuntimeVal } from "../values.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
     let lastEvaluated: RuntimeVal = MK_NULL();
