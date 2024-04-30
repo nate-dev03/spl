@@ -65,7 +65,7 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
     
     // Handle statements
     case "VarDeclaration":
-      
+      return eval_var_declaration()
     default:
       console.error("This AST Node as not yet been setup for interpretation.", astNode);
       Deno.exit(1);
