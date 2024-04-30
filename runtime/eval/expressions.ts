@@ -41,3 +41,6 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
     const val = env.lookupVar(ident.symbol);
     return val;
   }
+
+
+  
