@@ -104,6 +104,8 @@ export default class Parser {
       const value = this.parse_assignment_expr();
       return { value, assigne: left, kind: "AssignmentExpr" } as AssignmentExpr;
     }
+
+    return left;
   }
 
   private parse_assignment_expr(): Expr {
