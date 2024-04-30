@@ -139,8 +139,10 @@ export default class Parser {
       this.expect(TokenType.Colon, "Missing colon following identifier in ObjectLiteral.");
       const value = this.parse_expr();
 
-      properties.push({ kind: "Property", value, key })
-      
+      properties.push({ kind: "Property", value, key });
+      if (this.at().type !== TokenType.CloseBrace) {
+        
+      }
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
