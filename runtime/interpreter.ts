@@ -43,7 +43,7 @@ function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
   return { type: "null", value: "null" } as NullVal;
 }
 
-export function evaluate(astNode: Stmt): RuntimeVal {
+export function evaluate(astNode: Stmt,): RuntimeVal {
   switch (astNode.kind) {
     case "NumericLiteral":
       return {
