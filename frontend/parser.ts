@@ -131,7 +131,7 @@ export default class Parser {
         continue;
       } // Allows shorthand key: pair -> key,
       else if (this.at().type === TokenType.CloseBrace) {        
-        properties.push({ key, kind: "Property", value: undefined } as Property);
+        properties.push({ key, kind: "Property" } as Property);
         continue;
       }
 
