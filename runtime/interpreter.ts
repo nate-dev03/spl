@@ -1,4 +1,4 @@
-import { NullVal, NumberVal, RuntimeVal } from "./value.ts";
+import type { NullVal, NumberVal, RuntimeVal } from "./value.ts";
 import { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 
 function eval_program(program: Program): RuntimeVal {
