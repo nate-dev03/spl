@@ -101,7 +101,7 @@ export default class Parser {
   }
 
   private parse_assignment_expr(): Expr {
-    const left = this.parse_additive_expr(); // switch this out with objectExpr
+    const left = this.parse_object_expr();
 
     if (this.at().type == TokenType.Equals) {
       this.eat(); // advance past equals
