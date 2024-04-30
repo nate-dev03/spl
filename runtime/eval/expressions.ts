@@ -46,5 +46,5 @@ export function eval_assignment(node: AssignmentExpr, env: Environment): Runtime
   if (node.assigne.kind !== "Identifier")
     throw `Invalid LHS inside assignment expr ${JSON.stringify(node.assigne)}`;
 
-  return env.assignVar()
+  return env.assignVar(node.assigne.)
 }
