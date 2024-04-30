@@ -126,7 +126,7 @@ export default class Parser {
 
       if (this.at().type === TokenType.Comma) {
         this.eat(); // advance past comma
-        properties.push({} as Pe)
+        properties.push({} as Property);
       }
     }
 
