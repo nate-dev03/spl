@@ -55,6 +55,7 @@ export default class Parser {
       case TokenType.Let:
         
       case TokenType.Const:
+      
       default:
         return this.parse_expr();
     }
