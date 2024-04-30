@@ -15,5 +15,6 @@ export function eval_var_declaration(
   declaration: VarDeclaration,
   env: Environment,
 ): RuntimeVal {
-    env.declareVar(declaration.identifier, declaration.value);
+    const value = 
+    env.declareVar(declaration.identifier, value);
 }
