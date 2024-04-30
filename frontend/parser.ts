@@ -132,7 +132,3 @@ export default class Parser {
     }
   }
 }
-
-function parse_var_declaration(): Stmt {
-
-}
