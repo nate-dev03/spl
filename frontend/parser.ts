@@ -66,7 +66,7 @@ export default class Parser {
     ).value;
 
     if (this.at().type === TokenType.Semicolon) {
-      if (this.
+      if (isConst
     }
   }
 
