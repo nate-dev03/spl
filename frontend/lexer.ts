@@ -7,10 +7,10 @@ export enum TokenType {
   BinaryOperator,
   Equals,
   Comma, Colon,
-  OpenParen,
-  CloseParen,
-  OpenBrace,
-  CloseBrace, 
+  OpenParen, // (
+  CloseParen, // )
+  OpenBrace, // {
+  CloseBrace, // }
   Semicolon,
 
   // Keywords
