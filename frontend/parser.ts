@@ -111,6 +111,9 @@ export default class Parser {
 
     return left;
   }
+  parse_object_expr() {
+    throw new Error("Method not implemented.");
+  }
 
   private parse_additive_expr(): Expr {
     let left = this.parse_multiplicative_expr();
