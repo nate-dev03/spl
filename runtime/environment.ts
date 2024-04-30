@@ -22,6 +22,6 @@ export default class Environment {
     }
 
     public assignVar(varname: string, value: RuntimeVal): RuntimeVal {
-        
+        if (this.variables.)
     }
 }
