@@ -8,7 +8,7 @@ export default class Environment {
   constructor(parentENV?: Environment) {
     this.parent = parentENV;
     this.variables = new Map();
-    this.constants 
+    this.constants = new Set();
   }
 
   public declareVar(
