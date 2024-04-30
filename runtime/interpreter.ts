@@ -63,6 +63,8 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
     case "Program":
       return eval_program(astNode as Program, env);
     
+    // Handle statements
+    case "VarDeclaration":
       
     default:
       console.error("This AST Node as not yet been setup for interpretation.", astNode);
