@@ -1,6 +1,7 @@
 export type NodeType =
-  
+  // Statements
   | "Program"
+  
 
   // Expressions
   | "NumericLiteral"
