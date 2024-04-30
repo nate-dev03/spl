@@ -18,7 +18,7 @@ export interface BoolVal extends RuntimeVal {
   value: boolean;
 }
 
-export function MK_BOOL() {
+export function MK_BOOL(b = true) {
   return { type: "boolean", value:  b } as NullVal;
 }
 
