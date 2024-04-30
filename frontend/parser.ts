@@ -65,8 +65,9 @@ export default class Parser {
        "Expected identifier name following let | const keywords."
     ).value;
 
+    // 
     if (this.at().type === TokenType.Semicolon) {
-      
+
     }
   }
 
