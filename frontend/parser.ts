@@ -127,6 +127,7 @@ export default class Parser {
       if (this.at().type === TokenType.Comma) {
         this.eat(); // advance past comma
         properties.push({ key, kind: "Property", value: undefined } as Property);
+        continue;
       }
     }
 
