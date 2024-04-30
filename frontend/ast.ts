@@ -53,3 +53,8 @@ export interface NumericLiteral extends Expr {
   kind: "NumericLiteral";
   value: number;
 }
+
+export interface NumericLiteral extends Expr {
+  kind: "NumericLiteral";
+  value: number;
+}
