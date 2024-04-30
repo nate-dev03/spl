@@ -57,6 +57,10 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.OpenParen, char));
     } else if (char === ")") {
       tokens.push(token(TokenType.CloseParen, char));
+      else if (char === ")") {
+        tokens.push(token(TokenType.CloseParen, char));
+        else if (char === ")") {
+          tokens.push(token(TokenType.CloseParen, char));
     } else if (
       char === "+" || char === "-" || char === "*" || char === "/" ||
       char === "%"
