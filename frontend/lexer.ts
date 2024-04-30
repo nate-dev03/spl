@@ -9,7 +9,7 @@ export enum TokenType {
   CloseParen = 5,
 
   // Keywords
-  Let = 6,
+  Let = 6, Const = 7
 
   EOF = 7, // Signifies the end of file
 }
