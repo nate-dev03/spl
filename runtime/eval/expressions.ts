@@ -78,4 +78,7 @@ export function eval_object_expr(
   env: Environment,
 ): RuntimeVal {
   const object = { type: "object", props: new Map()} as ObjectVal;
+
+
+  return object;
 }
