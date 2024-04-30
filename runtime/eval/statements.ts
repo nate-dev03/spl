@@ -15,6 +15,6 @@ export function eval_var_declaration(
   declaration: VarDeclaration,
   env: Environment,
 ): RuntimeVal {
-    const value = 
+    const value = declaration.value ? declaration.value : MK_NULL();
     env.declareVar(declaration.identifier, value);
 }
