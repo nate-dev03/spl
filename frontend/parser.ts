@@ -130,7 +130,7 @@ export default class Parser {
         properties.push({ key, kind: "Property", value: undefined } as Property);
         continue;
       } // Allows shorthand key: pair -> key,
-      else if (this.at().type === TokenType.Comma) {
+      else if (this.at().type === TokenType.CloseBrace) {
         this.eat(); // advance past comma
         properties.push({ key, kind: "Property", value: undefined } as Property);
         continue;
