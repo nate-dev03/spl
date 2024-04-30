@@ -22,7 +22,7 @@ async function run(filename: string) {
   env.declareVar("null", MK_NULL(), true);
 
   const input = await Deno.readTextFile(filename);
-  
+  const program = parser.produceAST
 }
 
 function repl() {
