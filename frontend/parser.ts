@@ -132,3 +132,7 @@ export default class Parser {
     }
   }
 }
+
+function parse_var_declaration(): Stmt {
+  throw new Error("Function not implemented.");
+}
