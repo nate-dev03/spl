@@ -32,8 +32,9 @@ export default class Environment {
     
     // Cannot assign to constant
     if (env.constants.has(varname)) {
-
+        
     }
+    
     env.variables.set(varname, value);
 
     return value;
