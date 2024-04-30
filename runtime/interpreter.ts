@@ -1,5 +1,6 @@
 import type { NullVal, NumberVal, RuntimeVal } from "./value.ts";
 import type { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
+import Environment from "./environment.ts";
 
 function eval_program(program: Program): RuntimeVal {
   let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
@@ -43,7 +44,7 @@ function eval_binary_expr(binop: BinaryExpr): RuntimeVal {
   return { type: "null", value: "null" } as NullVal;
 }
 
-export function evaluate(astNode: Stmt,): RuntimeVal {
+export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
   switch (astNode.kind) {
     case "NumericLiteral":
       return {
