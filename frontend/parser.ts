@@ -89,7 +89,7 @@ export default class Parser {
       constant: isConstant,
     } as VarDeclaration;
 
-    this.expect("")
+    this.expect(TokenType.Semicolon, )
   }
 
   private parse_expr(): Expr {
