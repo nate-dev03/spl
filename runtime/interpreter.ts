@@ -1,5 +1,5 @@
 import type { NullVal, NumberVal, RuntimeVal } from "./value.ts";
-import { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
+import type { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 
 function eval_program(program: Program): RuntimeVal {
   let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
