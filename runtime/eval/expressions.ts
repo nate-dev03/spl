@@ -37,10 +37,9 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
     return MK_NULL();
   }
   
-  export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal {
+export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal {
     const val = env.lookupVar(ident.symbol);
     return val;
-  }
+}
 
 
-  
