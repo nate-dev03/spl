@@ -12,7 +12,7 @@ export default class Parser {
   private tokens: Token[] = [];
 
   private not_eof(): boolean {
-    return this.tokens[0].type != TokenType.EOF;
+    return this.tokens[0].type !== TokenType.EOF;
   }
 
   private at() {
