@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-unused-vars
 import Parser from "./frontend/parser.ts";
 import Environment from "./runtime/environment.ts";
 import { evaluate } from "./runtime/interpreter.ts";
