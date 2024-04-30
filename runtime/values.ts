@@ -6,7 +6,7 @@ export interface RuntimeVal {
 
 export interface NullVal extends RuntimeVal {
   type: "null";
-  value: "null";
+  value: null;
 }
 
 export interface NumberVal extends RuntimeVal {
