@@ -1,7 +1,7 @@
 import Parser from "./frontend/parser.ts";
 import Environment from "./runtime/environment.ts";
 import { evaluate } from "./runtime/interpreter.ts";
-import type { NumberVal } from "./runtime/values.ts";
+import { MK_NUMBER, type NumberVal } from "./runtime/values.ts";
 
 /**
 const source = await Deno.readTextFile("./test.spl");
