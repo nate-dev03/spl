@@ -43,9 +43,11 @@ function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
   // One or both are null
   return { type: "null", value: "null" } as NullVal;
 }
+
 function eval_identifier(ident: Identifier, env: Environment): RuntimeVal {
-  
+  const en
 }
+
 export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
   switch (astNode.kind) {
     case "NumericLiteral":
