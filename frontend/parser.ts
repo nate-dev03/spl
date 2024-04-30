@@ -135,7 +135,8 @@ export default class Parser {
         continue;
       }
 
-      // 
+      // { key: val }
+      
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
