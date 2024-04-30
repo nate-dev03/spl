@@ -67,7 +67,7 @@ export default class Parser {
 
     if (this.at().type === TokenType.Semicolon) {
       if (isConstant) {
-        throw ""
+        throw "Must assign "
       }
     }
   }
