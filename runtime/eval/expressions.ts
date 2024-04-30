@@ -6,7 +6,7 @@ import {
 } from "../../frontend/ast.ts";
 import Environment from "../environment.ts";
 import { evaluate } from "../interpreter.ts";
-import { MK_NULL, NumberVal, RuntimeVal } from "../values.ts";
+import { MK_NULL, NumberVal, ObjectVal, RuntimeVal } from "../values.ts";
 
 function eval_numeric_binary_expr(
   lhs: NumberVal,
@@ -77,5 +77,5 @@ export function eval_object_expr(
   obj: ObjectLiteral,
   env: Environment,
 ): RuntimeVal {
-  const object = { type: "object", props: new Map<}
+  const object = { type: "object", props: new Map()} as ObjectVal;
 }
