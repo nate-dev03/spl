@@ -50,4 +50,6 @@ export function eval_assignment(node: AssignmentExpr, env: Environment): Runtime
   return env.assignVar(varname, evaluate(node.value, env));
 }
 
-export function eval_object_expr(obj: ObjectLiteral, env: Environment): RuntimeVal {}
+export function eval_object_expr(obj: ObjectLiteral, env: Environment): RuntimeVal {
+  
+}
