@@ -140,7 +140,7 @@ export default class Parser {
       const value = this.parse_expr();
 
       properties.push({ kind: "Property", value, key })
-
+      
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
