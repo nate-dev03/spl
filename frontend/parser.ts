@@ -63,7 +63,7 @@ export default class Parser {
     const isConstant = this.eat().type === TokenType.Const
     const identifier = this.expect(TokenType.Identifier,
        "Expected identifier name following let | const keywords."
-      ).value;
+    ).value;
 
     
   }
