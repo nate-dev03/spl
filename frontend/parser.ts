@@ -6,6 +6,7 @@ import type {
   NumericLiteral,
   Program,
   Stmt,
+  VarDeclaration,
 } from "./ast.ts";
 import { type Token, tokenize, TokenType } from "./lexer.ts";
 
@@ -69,7 +70,7 @@ export default class Parser {
       if (isConstant)
         throw "Must assign value to constant expression. No value provided.";
       
-      return 
+      return {} as VarDeclaration;
     }
   }
 
