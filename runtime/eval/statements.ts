@@ -1,3 +1,4 @@
+import { MK_NULL } from "../values.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
     let lastEvaluated: RuntimeVal = MK_NULL();
