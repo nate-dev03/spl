@@ -73,5 +73,5 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
 }
 
 function eval_var_declaration(arg0: VarDeclaration, env: Environment): RuntimeVal {
-  throw new Error("Function not implemented.");
+  
 }
