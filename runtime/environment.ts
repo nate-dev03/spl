@@ -26,6 +26,10 @@ export default class Environment {
     }
 
     public resolve(varname: string): Environment {
-        if 
+        if (this.variables.has(varname)) {
+            return this;
+        }
+
+        
     }
 }
