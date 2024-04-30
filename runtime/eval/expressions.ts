@@ -44,5 +44,5 @@ export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal
 
 export function eval_assignment(node: AssignmentExpr, env: Environment): RuntimeVal {
   if (node.assigne.kind !== "Identifier") {
-    throw `Invalid LHS inside assignment expr ${node}`
+    throw `Invalid LHS inside assignment expr ${}`
 }
