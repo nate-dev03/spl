@@ -77,11 +77,12 @@ export function eval_object_expr(
   obj: ObjectLiteral,
   env: Environment,
 ): RuntimeVal {
-  const object = { type: "object", props: new Map()} as ObjectVal;
+  const object = { type: "object", props: new Map() } as ObjectVal;
 
   for (const { key, value } of obj.props) {
-
-    const runtimeVal = (value == undefined) ? env.lookupVar(key) : evaluate(value, env);
+    const runtimeVal = (value == undefined)
+      ? env.lookupVar(key)
+      : evaluate(value, env);
     object.props.set(key, runtimeVal);
   }
 
