@@ -21,7 +21,8 @@ async function run(filename: string) {
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
 
-  const input = await Deno.readTextFile(fuil)
+  const input = await Deno.readTextFile(filename);
+  
 }
 
 function repl() {
