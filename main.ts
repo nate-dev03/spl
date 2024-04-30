@@ -46,7 +46,7 @@ function repl() {
       Deno.exit(1);
     }
 
-    //  
+    // Produce ast from source-code
     const program = parser.produceAST(input);
 
     const result = evaluate(program, env);
