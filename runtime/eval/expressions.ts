@@ -81,10 +81,7 @@ export function eval_object_expr(
 
   for (const { key, value } of obj.props) {
 
-    // handles valid key: pair
-    if (value) {
-      
-    }
+    const runtimeVal = (value == undefined) ? evaluate()
     object.props.set(key, runtimeVal);
   }
 
