@@ -19,7 +19,8 @@ export default class Environment {
     this.constants = new Set();
 
     if (global)
-      setupScope()
+      setupScope(this);
+    }
   }
 
   public declareVar(
