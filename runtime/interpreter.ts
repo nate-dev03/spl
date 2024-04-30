@@ -1,4 +1,4 @@
-import { MK_NULL, type NumberVal, type RuntimeVal } from "./values.ts";
+import { type NumberVal, type RuntimeVal } from "./values.ts";
 import type {
   BinaryExpr,
   Identifier,
