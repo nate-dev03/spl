@@ -102,7 +102,7 @@ export default class Parser {
     if (this.at().type == TokenType.Equals) {
       this.eat(); // advance past equals
       const value = this.parse_assignment_expr();
-      return { value, assignee: left, kind: "AssignmentExpr" } as AssignmentExpr;
+      return { value, assigne: left, kind: "AssignmentExpr" } as AssignmentExpr;
     }
   }
 
