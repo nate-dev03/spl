@@ -70,7 +70,7 @@ export default class Parser {
       if (isConstant)
         throw "Must assign value to constant expression. No value provided.";
       
-      return {kind: "VarDeclaration", identifier: identifier, constant: isConstant, } as VarDeclaration;
+      return {kind: "VarDeclaration", identifier: identifier, constant: false, } as VarDeclaration;
     }
   }
 
