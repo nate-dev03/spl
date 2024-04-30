@@ -116,6 +116,7 @@ export default class Parser {
       return this.parse_additive_expr();
     }
 
+    this.eat(); // advance past open brace.
     
   }
 
