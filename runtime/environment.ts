@@ -31,6 +31,6 @@ export default class Environment {
         }
 
         if (this.parent == undefined)
-            throw "Cannot resolve"
+            throw "Cannot resolve ${varname `
     }
 }
