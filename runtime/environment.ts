@@ -30,7 +30,7 @@ export default class Environment {
             return this;
         }
 
-        if (this.parent == undefined)
+        if (this.parent === undefined)
             throw `Cannot resolve '${varname}' as it does not exists.`
     }
 }
