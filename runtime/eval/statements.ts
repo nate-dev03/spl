@@ -1,3 +1,4 @@
+import Environment from "../environment.ts";
 import { MK_NULL } from "../values.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
