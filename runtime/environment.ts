@@ -1,4 +1,4 @@
-import type { RuntimeVal } from "./values.ts";
+import { MK_BOOL, MK_NULL, type RuntimeVal } from "./values.ts";
 
 function setupScope(env: Environment) {
   // Create a default global environment
