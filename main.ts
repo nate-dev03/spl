@@ -36,12 +36,12 @@ function repl() {
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
 
-  // Initialize repl
+  // Initialize
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
 
-    // Continue Repl until User 
+    // Check for no user input or exit keyword.
     if (!input || input?.includes("exit")) {
       Deno.exit(1);
     }
