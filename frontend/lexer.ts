@@ -61,6 +61,8 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.OpenBrace, char));
     } else if (char === "}") {
       tokens.push(token(TokenType.CloseBrace, char));
+
+    // Handle binary operators
     } else if (
       char === "+" || char === "-" || char === "*" || char === "/" ||
       char === "%"
