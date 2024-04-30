@@ -56,7 +56,7 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
     case "BinaryExpr":
       return eval_binary_expr(astNode as BinaryExpr, env);
     case "Program":
-      return eval_program(astNode as Program);
+      return eval_program(astNode as Program, env);
 
     default:
       console.error("This AST Node as not yet been setup for interpretation.", astNode);
