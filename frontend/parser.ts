@@ -60,7 +60,7 @@ export default class Parser {
     }
   }
   parse_var_declaration(): Stmt {
-    throw new Error("Method not implemented.");
+    
   }
 
   private parse_expr(): Expr {
