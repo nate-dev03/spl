@@ -15,5 +15,5 @@ export interface NumberVal extends RuntimeVal {
 }
 
 export function MK_NUMBER(n = 0) {
-  ret
+  return { type: "number", value: n } as N
 }
