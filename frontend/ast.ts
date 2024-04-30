@@ -56,4 +56,5 @@ export interface NumericLiteral extends Expr {
 
 export interface ObjectLiteral extends Expr {
   kind: "ObjectLiteral";
-  props: Property
+  props: Property[]
+}
