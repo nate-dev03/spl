@@ -29,6 +29,7 @@ export default class Environment {
 
   public assignVar(varname: string, value: RuntimeVal): RuntimeVal {
     const env = this.resolve(varname);
+    
     // Cannot assign to constant
     if (env.constants.has(varname)) {
 
