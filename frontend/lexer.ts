@@ -84,7 +84,7 @@ export function tokenize(sourceCode: string): Token[] {
 
         // Check for reserved keywords
         const reserved = KEYWORDS[ident];
-        if(typeof reserved == "number") {
+        if(typeof reserved === "number") {
           tokens.push(token(reserved, ident));
         } else {
           tokens.push(token(TokenType.Identifier, ident));
