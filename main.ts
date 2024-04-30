@@ -12,7 +12,7 @@ for (const token of lexer.tokenize(source)) {
 
 repl();
 
-async function run(params:type) {
+async function run(filename: string) {
   
 }
 
