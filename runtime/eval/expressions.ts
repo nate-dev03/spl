@@ -43,5 +43,5 @@ export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal
 }
 
 export function eval_assignment(node: AssignmentExpr, env: Environment): RuntimeVal {
-  const 
+  node.assigne.kind == "Identifier"
 }
