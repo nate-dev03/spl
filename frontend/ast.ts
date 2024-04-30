@@ -55,6 +55,6 @@ export interface NumericLiteral extends Expr {
 }
 
 export interface ObjectLiteral extends Expr {
-  kind: "NumericLiteral";
+  kind: "ObjectLiteral";
   value: number;
 }
