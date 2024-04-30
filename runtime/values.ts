@@ -31,7 +31,7 @@ export function MK_NUMBER(n = 0) {
   return { type: "number", value: n } as NumberVal;
 }
 
-export interface NumberVal extends RuntimeVal {
+export interface ObjectVal extends RuntimeVal {
   type: "number";
   value: number;
 }
