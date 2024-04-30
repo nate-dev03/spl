@@ -1,5 +1,7 @@
 import type { RuntimeVal } from "./values.ts";
 
+function setupGlo
+
 export default class Environment {
   private parent?: Environment;
   private variables: Map<string, RuntimeVal>;
