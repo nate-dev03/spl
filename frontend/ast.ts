@@ -21,7 +21,7 @@ export interface VarDeclaration extends Stmt {
   kind: "VarDeclaration";
   constant: boolean,
   identifier: string,
-  
+  value: 
 }
 
 export interface Expr extends Stmt {}
