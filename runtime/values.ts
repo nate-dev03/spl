@@ -9,7 +9,7 @@ export interface NullVal extends RuntimeVal {
   value: null;
 }
 
-export function MK_NUMBER(n = 0) {
+export function MK_NULL(n = 0) {
   return { type: "number", value: n } as NumberVal;
 }
 
