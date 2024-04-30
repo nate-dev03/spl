@@ -59,6 +59,9 @@ export default class Parser {
         return this.parse_expr();
     }
   }
+  parse_var_declaration(): Stmt {
+    throw new Error("Method not implemented.");
+  }
 
   private parse_expr(): Expr {
     return this.parse_additive_expr();
