@@ -11,7 +11,7 @@ export enum TokenType {
   // Keywords
   Let = 6, Const = 7
 
-  EOF = 7, // Signifies the end of file
+  EOF = 8, // Signifies the end of file
 }
 
 const KEYWORDS: Record<string, TokenType> = {
