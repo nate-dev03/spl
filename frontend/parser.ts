@@ -141,7 +141,7 @@ export default class Parser {
 
       properties.push({ kind: "Property", value, key });
       if (this.at().type !== TokenType.CloseBrace) {
-        
+        this.expect
       }
     }
 
