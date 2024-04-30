@@ -41,7 +41,7 @@ function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
   }
 
   // One or both are null
-
+  return MK_NULL();
 }
 
 function eval_identifier(ident: Identifier, env: Environment): RuntimeVal {
