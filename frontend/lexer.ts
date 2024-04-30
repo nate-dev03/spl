@@ -10,7 +10,7 @@ export enum TokenType {
 
   // Keywords
   Let,
-  Const = 7,
+  Const,
 
   EOF, // Signifies the end of file
 }
