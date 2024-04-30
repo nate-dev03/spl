@@ -2,13 +2,7 @@ import { MK_NULL, type NumberVal, type RuntimeVal } from "./values.ts";
 import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt, VarDeclaration } from "../frontend/ast.ts";
 import type Environment from "./environment.ts";
 
-function eval_program(program: Program, env: Environment): RuntimeVal {
-  let lastEvaluated: RuntimeVal = MK_NULL();
-  for (const stmt of program.body) {
-    lastEvaluated = evaluate(stmt, env);
-  }
-  return lastEvaluated;
-}
+
 
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
   let result = 0;
@@ -73,5 +67,5 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
 }
 
 function eval_var_declaration(arg0: VarDeclaration, env: Environment): RuntimeVal {
-  
+
 }
