@@ -55,22 +55,29 @@ export default class Parser {
     switch (this.at().type) {
       case TokenType.Let:
       case TokenType.Const:
-        return this.parse_var_declaration()
+        return this.parse_var_declaration();
       default:
         return this.parse_expr();
     }
   }
   parse_var_declaration(): Stmt {
-    const isConstant = this.eat().type === TokenType.Const
-    const identifier = this.expect(TokenType.Identifier,
-       "Expected identifier name following let | const keywords."
-    ).value;
+    const isConstant = this.eat().type === TokenType.Const;
+    const identifier =
+      this.expect(
+        TokenType.Identifier,
+        "Expected identifier name following let | const keywords.",
+      ).value;
 
     if (this.at().type === TokenType.Semicolon) {
-      if (isConstant)
+      if (isConstant) {
         throw "Must assign value to constant expression. No value provided.";
-      
-      return {kind: "VarDeclaration", identifier: identifier, constant: false } as VarDeclaration;
+      }
+
+      return {
+        kind: "VarDeclaration",
+        identifier: identifier,
+        constant: false,
+      } as VarDeclaration;
     }
   }
 
