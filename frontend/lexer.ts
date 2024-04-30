@@ -6,7 +6,7 @@ export enum TokenType {
   BinaryOperator = 2,
   Equals = 3,
   OpenParen = 4,
-  CloseParen = 5,
+  CloseParen,
 
   // Keywords
   Let,
