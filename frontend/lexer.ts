@@ -8,6 +8,7 @@ export enum TokenType {
   Equals,
   OpenParen,
   CloseParen,
+  Semicolon,
 
   // Keywords
   Let,
