@@ -76,8 +76,8 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.Colon, char));
     } else if (char == ",") {
       tokens.push(token(TokenType.Comma, char));
-    // Handle multicharacter keywords, tokens, identifiers, etc.
-    } else {
+    } // Handle multicharacter keywords, tokens, identifiers, etc.
+    else {
       // Handle multi-character tokens
 
       // Build number token
