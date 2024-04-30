@@ -22,7 +22,7 @@ export default class Environment {
     }
 
     public assignVar(varname: string, value: RuntimeVal): RuntimeVal {
-        
+        const env = 
     }
 
     public resolve(varname: string): Environment {
