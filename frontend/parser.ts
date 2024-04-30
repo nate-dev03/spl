@@ -69,7 +69,7 @@ export default class Parser {
       if (isConstant)
         throw "Must assign value to constant expression. No value provided.";
       
-      
+      return 
     }
   }
 
