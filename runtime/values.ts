@@ -13,7 +13,7 @@ export function MK_NULL() {
   return { type: "null", value: null } as NullVal;
 }
 
-export interface BoolVal extends RuntimeVal {
+export interface BooleanVal extends RuntimeVal {
   type: boolean;
   value: boolean;
 }
