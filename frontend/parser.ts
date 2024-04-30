@@ -6,7 +6,7 @@ import {
   Program,
   Stmt,
 } from "./ast.ts";
-import { Token, tokenize, TokenType } from "./lexer.ts";
+import { type Token, tokenize, TokenType } from "./lexer.ts";
 
 export default class Parser {
   private tokens: Token[] = [];
