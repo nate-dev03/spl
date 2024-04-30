@@ -28,7 +28,6 @@ export default class Environment {
     public resolve(varname: string): Environment {
         if (this.variables.has(varname)) {
             return this;
-        }
 
         if (this.parent === undefined)
             throw `Cannot resolve '${varname}' as it does not exists.`
