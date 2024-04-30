@@ -1,5 +1,7 @@
-import { BinaryExpr } from "../../frontend/ast.ts";
+import { BinaryExpr, Identifier } from "../../frontend/ast.ts";
 import Environment from "../environment.ts";
+import { evaluate } from "../interpreter.ts";
+import { NumberVal, RuntimeVal, MK_NULL } from "../values.ts";
 
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
     let result = 0;
