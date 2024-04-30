@@ -22,7 +22,8 @@ export default class Environment {
     }
 
     public assignVar(varname: string, value: RuntimeVal): RuntimeVal {
-        const env = 
+        const env = this.resolve(varname);
+        
     }
 
     public resolve(varname: string): Environment {
