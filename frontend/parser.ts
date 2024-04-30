@@ -98,7 +98,7 @@ export default class Parser {
   private parse_expr(): Expr {
     return this.parse_assignment_expr();
   }
-  parse_assignment_expr(): Expr {
+  private parse_assignment_expr(): Expr {
     throw new Error("Method not implemented.");
   }
 
