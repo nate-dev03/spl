@@ -21,7 +21,7 @@ async function run(filename: string) {
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
 
-  const 
+  const input = 
 }
 
 function repl() {
