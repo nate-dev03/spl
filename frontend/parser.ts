@@ -97,7 +97,7 @@ export default class Parser {
   }
 
   private parse_expr(): Expr {
-    
+    return this.parse_assignment_expr();
   }
 
   private parse_assignment_expr(): Expr {
