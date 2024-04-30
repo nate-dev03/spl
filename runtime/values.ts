@@ -19,7 +19,7 @@ export interface BoolVal extends RuntimeVal {
 }
 
 export function MK_BOOL() {
-  return { type: "boolean", value: null } as NullVal;
+  return { type: "boolean", value:  b } as NullVal;
 }
 
 export interface NumberVal extends RuntimeVal {
