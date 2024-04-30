@@ -16,7 +16,8 @@ function repl() {
   const parser = new Parser();
   const env = new Environment();
   env.declareVar("x", MK_NUMBER(100));
-  env.declareVar("") 
+  env.declareVar("true", MK_BOOL(true));
+   
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
