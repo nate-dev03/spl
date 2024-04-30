@@ -1,4 +1,4 @@
-import { Program } from "../../frontend/ast.ts";
+import type { Program } from "../../frontend/ast.ts";
 import type Environment from "../environment.ts";
 import { MK_NULL, type RuntimeVal } from "../values.ts";
 
