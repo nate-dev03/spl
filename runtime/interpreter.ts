@@ -1,7 +1,6 @@
 import { type NumberVal, type RuntimeVal } from "./values.ts";
 import type {
   BinaryExpr,
-import { eval_var_declaration } from "./eval/statements.ts";
   Identifier,
   NumericLiteral,
   Program,
