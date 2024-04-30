@@ -125,7 +125,7 @@ export default class Parser {
       const key = this.expect(TokenType.Identifier, "Object literal key expected.").value;
 
       if (this.at().type === TokenType.Comma) {
-        
+        this.eat(); // 
       }
     }
 
