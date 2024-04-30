@@ -81,7 +81,7 @@ export function eval_object_expr(
 
   for (const { key, value } of obj.props) {
 
-    const runtimeVal = (value == undefined) ? env.lookupVar(key) : evaluate(value);
+    const runtimeVal = (value == undefined) ? env.lookupVar(key) : evaluate(value, env);
     object.props.set(key, runtimeVal);
   }
 
