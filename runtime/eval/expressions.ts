@@ -1,3 +1,4 @@
+import { BinaryExpr } from "../../frontend/ast.ts";
 
 function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: string): NumberVal {
     let result = 0;
