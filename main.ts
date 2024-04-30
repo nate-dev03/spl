@@ -25,8 +25,8 @@ async function run(filename: string) {
 
 function repl() {
   const parser = new Parser();
-  const env = new Environment();
-
+  const env = createGlobalEnv();
+  
   // Initialize repl
   console.log("\nRepl v0.1");
   while (true) {
