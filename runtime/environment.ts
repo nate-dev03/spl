@@ -23,7 +23,7 @@ export default class Environment {
     this.variables.set(varname, value);
 
     if (constant)
-        this.constants.
+        this.constants.add(varname);
     return value;
   }
 
