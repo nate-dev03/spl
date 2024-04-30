@@ -8,4 +8,4 @@ export function eval_program(program: Program, env: Environment): RuntimeVal {
       lastEvaluated = evaluate(stmt, env);
     }
     return lastEvaluated;
-  }
+}
