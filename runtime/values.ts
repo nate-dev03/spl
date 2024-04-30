@@ -13,6 +13,15 @@ export function MK_NULL() {
   return { type: "null", value: null } as NullVal;
 }
 
+export interface NullVal extends RuntimeVal {
+  type: "null";
+  value: null;
+}
+
+export function MK_NULL() {
+  return { type: "null", value: null } as NullVal;
+}
+
 export interface NumberVal extends RuntimeVal {
   type: "number";
   value: number;
