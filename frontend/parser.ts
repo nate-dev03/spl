@@ -99,7 +99,7 @@ export default class Parser {
     const left = this.parse_additive_expr(); // switch this out with objectExpr
 
     if (this.at().type == TokenType.Equals) {
-      
+      this.eat(); // 
     }
   }
 
