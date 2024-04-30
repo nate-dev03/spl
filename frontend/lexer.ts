@@ -2,6 +2,7 @@ export enum TokenType {
   // Literal types
   Number,
   Identifier,
+  String,
 
   BinaryOperator,
   Equals,
