@@ -2,7 +2,7 @@ import type { NullVal, NumberVal, RuntimeVal } from "./value.ts";
 import type { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 import Environment from "./environment.ts";
 
-function eval_program(program: Program): RuntimeVal {
+function eval_program(program: Program, env: Environment): RuntimeVal {
   let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
   for (const stmt of program.body) {
     lastEvaluated = evaluate(stmt, env);
