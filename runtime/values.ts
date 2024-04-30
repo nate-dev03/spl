@@ -14,4 +14,6 @@ export interface NumberVal extends RuntimeVal {
   value: number;
 }
 
-export function MK_NUMBER(n: number)
+export function MK_NUMBER(n: number = 0) {
+  
+}
