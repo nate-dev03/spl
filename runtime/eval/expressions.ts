@@ -42,4 +42,4 @@ export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal
     return val;
 }
 
-
+export function eval_assignment()
