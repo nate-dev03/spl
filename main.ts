@@ -13,10 +13,6 @@ for (const token of lexer.tokenize(source)) {
 repl();
 
 async function run(filename: string) {
-  
-}
-
-function repl() {
   const parser = new Parser();
   const env = new Environment();
   
@@ -25,7 +21,10 @@ function repl() {
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
 
-  console.log("\nRepl v0.1");
+}
+
+function repl() {
+    console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
 
