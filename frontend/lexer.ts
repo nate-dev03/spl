@@ -6,7 +6,8 @@ export enum TokenType {
 
   BinaryOperator,
   Equals,
-  Comma, Colon,
+  Comma,
+  Colon,
   OpenParen, // (
   CloseParen, // )
   OpenBrace, // {
@@ -61,7 +62,6 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.OpenBrace, char));
     } else if (char === "}") {
       tokens.push(token(TokenType.CloseBrace, char));
-
     } // Handle binary operators
     else if (
       char === "+" || char === "-" || char === "*" || char === "/" ||
@@ -70,7 +70,7 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.BinaryOperator, char));
     } else if (char === "=") {
       tokens.push(token(TokenType.Equals, char));
-    }  else if (char === ";") {
+    } else if (char === ";") {
       tokens.push(token(TokenType.Semicolon, char));
     } else if (char == ":") {
       tokens.push(token(TokenType.Colon, char));
@@ -104,7 +104,7 @@ export function tokenize(sourceCode: string): Token[] {
 
         // Check for reserved keywords
         const reserved = KEYWORDS[ident];
-        if(typeof reserved === "number") {
+        if (typeof reserved === "number") {
           tokens.push(token(reserved, ident));
         } else {
           tokens.push(token(TokenType.Identifier, ident));
