@@ -6,6 +6,8 @@ export enum TokenType {
 
   BinaryOperator,
   Equals,
+  Comma,
+  
   OpenParen,
   CloseParen,
   Semicolon,
