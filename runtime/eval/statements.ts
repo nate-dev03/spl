@@ -1,5 +1,6 @@
-import type { Program } from "../../frontend/ast.ts";
+import type { Program, VarDeclaration } from "../../frontend/ast.ts";
 import type Environment from "../environment.ts";
+import { evaluate } from "../interpreter.ts";
 import { MK_NULL, type RuntimeVal } from "../values.ts";
 
 export function eval_program(program: Program, env: Environment): RuntimeVal {
