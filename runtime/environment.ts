@@ -22,6 +22,7 @@ export default class Environment {
 
     this.variables.set(varname, value);
 
+    
     return value;
   }
 
