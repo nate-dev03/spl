@@ -12,6 +12,10 @@ for (const token of lexer.tokenize(source)) {
 
 repl();
 
+async function run(params:type) {
+  
+}
+
 function repl() {
   const parser = new Parser();
   const env = new Environment();
