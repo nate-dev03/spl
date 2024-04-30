@@ -36,7 +36,7 @@ function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
   const lhs = evaluate(binop.left, env);
   const rhs = evaluate(binop.right, env);
 
-  if(lhs.type == "number" && rhs.type === "number") {
+  if(lhs.type === "number" && rhs.type === "number") {
     return eval_numeric_binary_expr(lhs as NumberVal, rhs as NumberVal, binop.operator);
   }
 
