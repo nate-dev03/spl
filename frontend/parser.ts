@@ -138,6 +138,9 @@ export default class Parser {
       // { key: val }
       this.expect(TokenType.Colon, "Missing colon following identifier in ObjectLiteral.");
       const value = this.parse_expr();
+
+      
+
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
