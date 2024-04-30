@@ -1,4 +1,4 @@
-import { BinaryExpr, Identifier } from "../../frontend/ast.ts";
+import { AssignmentExpr, BinaryExpr, Identifier } from "../../frontend/ast.ts";
 import Environment from "../environment.ts";
 import { evaluate } from "../interpreter.ts";
 import { NumberVal, RuntimeVal, MK_NULL } from "../values.ts";
@@ -42,4 +42,6 @@ export function eval_identifier(ident: Identifier, env: Environment): RuntimeVal
     return val;
 }
 
-export function eval_assignment()
+export function eval_assignment(node: AssignmentExpr, env: Environment): RuntimeVal {
+  
+}
