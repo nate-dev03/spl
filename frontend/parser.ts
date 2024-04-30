@@ -129,6 +129,8 @@ export default class Parser {
         properties.push({ key, kind: "Property", value: undefined } as Property);
         continue;
       }
+
+      
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
