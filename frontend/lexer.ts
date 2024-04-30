@@ -58,7 +58,7 @@ export function tokenize(sourceCode: string): Token[] {
     } else if (char === ")") {
       tokens.push(token(TokenType.CloseParen, char));
     } else if (char === "{") {
-      tokens.push(token(TokenType.CloseBrace, char));
+      tokens.push(token(TokenType.OpenBrace, char));
     } else if (char === "}") {
       tokens.push(token(TokenType.CloseBrace, char));
     } else if (
