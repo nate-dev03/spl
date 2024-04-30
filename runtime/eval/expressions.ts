@@ -77,5 +77,5 @@ export function eval_object_expr(
   obj: ObjectLiteral,
   env: Environment,
 ): RuntimeVal {
-  const object = { type: "object", p}
+  const object = { type: "object", props: new Map<}
 }
