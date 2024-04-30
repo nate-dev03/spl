@@ -26,7 +26,7 @@ export default class Environment {
     }
 
     public resolve(varname: string): Environment {
-        if (this.variables.has(varname)) {
+        if (this.variables.has(varname))
             return this;
 
         if (this.parent === undefined)
