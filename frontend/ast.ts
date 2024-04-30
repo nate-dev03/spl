@@ -1,7 +1,6 @@
 export type NodeType =
   | "Program"
   | "NumericLiteral"
-  | "NullLiteral"
   | "Identifier"
   | "BinaryExpr";
 
