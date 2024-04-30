@@ -60,7 +60,7 @@ export default class Parser {
     }
   }
   parse_var_declaration(): Stmt {
-    const isConstant = this.eat().type == TokenType.Const
+    const isConstant = this.eat().type === TokenType.Const
   }
 
   private parse_expr(): Expr {
