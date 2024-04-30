@@ -23,7 +23,7 @@ function repl() {
 
     const program = parser.produceAST(input);
 
-    const result = evaluate(program);
+    const result = evaluate(program, env);
     console.log(result);
   }
 }
