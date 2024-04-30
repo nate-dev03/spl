@@ -80,6 +80,8 @@ export default class Parser {
         constant: false,
       } as VarDeclaration;
     }
+
+    this.expect(TokenType.Equals, "Ex")
   }
 
   private parse_expr(): Expr {
