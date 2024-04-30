@@ -61,6 +61,8 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.BinaryOperator, char));
     } else if (char === "=") {
       tokens.push(token(TokenType.Equals, char));
+    }  else if (char === ";") {
+      tokens.push(token(TokenType.Equals, char));
     } else {
       // Handle multi-character tokens
 
