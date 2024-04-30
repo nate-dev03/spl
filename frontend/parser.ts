@@ -97,6 +97,10 @@ export default class Parser {
   }
 
   private parse_expr(): Expr {
+    
+  }
+
+  private parse_assignment_expr(): Expr {
     const left = this.parse_additive_expr(); // switch this out with objectExpr
 
     if (this.at().type == TokenType.Equals) {
@@ -106,10 +110,6 @@ export default class Parser {
     }
 
     return left;
-  }
-
-  private parse_assignment_expr(): Expr {
-  
   }
 
   private parse_additive_expr(): Expr {
