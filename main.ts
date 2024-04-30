@@ -10,6 +10,7 @@ for (const token of lexer.tokenize(source)) {
 }
 **/
 
+// repl();
 run("./text.txt");
 
 async function run(filename: string) {
