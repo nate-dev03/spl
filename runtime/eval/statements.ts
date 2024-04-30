@@ -9,3 +9,7 @@ export function eval_program(program: Program, env: Environment): RuntimeVal {
     }
     return lastEvaluated;
 }
+
+export function eval_var_declaration(arg0: VarDeclaration, env: Environment): RuntimeVal {
+
+}
