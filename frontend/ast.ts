@@ -7,7 +7,8 @@ export type NodeType =
   | "AssignmentExpr"
 
   // Literals
-  
+  | "Property"
+  | 
   | "NumericLiteral"
   | "Identifier"
   | "BinaryExpr";
