@@ -80,7 +80,10 @@ export function eval_object_expr(
   const object = { type: "object", props: new Map()} as ObjectVal;
 
   for (const { key, value } of obj.props) {
-    
+
+    if (value) {
+      
+    }
   }
 
   return object;
