@@ -2,7 +2,7 @@ import { MK_NULL, type NumberVal, type RuntimeVal } from "./values.ts";
 import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt, VarDeclaration } from "../frontend/ast.ts";
 import type Environment from "./environment.ts";
 import { eval_program, eval_var_declaration } from "./eval/statements.ts";
-
+import { eval_binary_expr, eva } from "./eval/expressions.ts";
 export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
   switch (astNode.kind) {
     case "NumericLiteral":
