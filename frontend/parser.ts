@@ -5,6 +5,7 @@ AssignmentExpr,
   Expr,
   Identifier,
   NumericLiteral,
+  ObjectLiteral,
   Program,
   Property,
   Stmt,
@@ -125,7 +126,7 @@ export default class Parser {
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
-    return { } as OBj
+    return { } as ObjectLiteral
   }
 
   private parse_additive_expr(): Expr {
