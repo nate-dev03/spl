@@ -1,3 +1,4 @@
+// biome-ignore lint/style/useEnumInitializers: <explanation>
 export enum TokenType {
   // Literal types
   Number,
