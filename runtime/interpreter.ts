@@ -1,5 +1,5 @@
 import type { NullVal, NumberVal, RuntimeVal } from "./value.ts";
-import type { BinaryExpr, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
+import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 import type Environment from "./environment.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
@@ -53,6 +53,8 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
       } as NumberVal;
     case "NullLiteral":
       return { type: "null", value: "null" } as NullVal;
+    case "Identifier":
+      return eval_identifier(astNode as Identifier, env);
     case "BinaryExpr":
       return eval_binary_expr(astNode as BinaryExpr, env);
     case "Program":
