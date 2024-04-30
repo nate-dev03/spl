@@ -113,7 +113,7 @@ export default class Parser {
   }
   private parse_object_expr(): Expr {
     if (this.at().type !== TokenType.OpenBrace) {
-      return
+      return this.parse_additive_expr();
     }
   }
 
