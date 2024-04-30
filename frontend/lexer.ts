@@ -9,7 +9,8 @@ export enum TokenType {
   Comma, Colon,
   OpenParen,
   CloseParen,
-  
+  OpenBrace,
+  CloseBrace, 
   Semicolon,
 
   // Keywords
