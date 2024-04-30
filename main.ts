@@ -41,7 +41,7 @@ function repl() {
   while (true) {
     const input = prompt("> ");
 
-    // Check for no user input or exit keyword.
+    // Continue Repl until User 
     if (!input || input?.includes("exit")) {
       Deno.exit(1);
     }
