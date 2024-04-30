@@ -12,7 +12,7 @@ export function eval_program(program: Program, env: Environment): RuntimeVal {
 }
 
 export function eval_var_declaration(
-  arg0: VarDeclaration,
+  declaration: VarDeclaration,
   env: Environment,
 ): RuntimeVal {
     
