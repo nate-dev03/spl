@@ -36,7 +36,7 @@ function repl() {
   env.declareVar("false", MK_BOOL(false), true);
   env.declareVar("null", MK_NULL(), true);
 
-  // Initialize
+  // Initialize repl
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
