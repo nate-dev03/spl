@@ -47,5 +47,5 @@ export function eval_assignment(node: AssignmentExpr, env: Environment): Runtime
     throw `Invalid LHS inside assignment expr ${JSON.stringify(node.assigne)}`;
 
   const varname = (node.assigne as Identifier).symbol;
-  return env.assignVar(varname, evaluated(node.value);
+  return env.assignVar(varname, evaluated(node.value, env));
 }
