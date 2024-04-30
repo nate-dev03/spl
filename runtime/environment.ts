@@ -25,5 +25,7 @@ export default class Environment {
         
     }
 
-    publ
+    public function resolve(varname: string): Environment {
+        
+    }
 }
