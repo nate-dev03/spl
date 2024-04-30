@@ -5,6 +5,9 @@ export type NodeType =
 
   // Expressions
   | "AssignmentExpr"
+
+  // Literals
+  
   | "NumericLiteral"
   | "Identifier"
   | "BinaryExpr";
