@@ -1,6 +1,6 @@
 import { MK_BOOL, MK_NULL, type RuntimeVal } from "./values.ts";
 
-function setupScope() {
+function createGlobalENV() {
   const env = new Environment();
   // Create a default global environment
   env.declareVar("true", MK_BOOL(true), true);
