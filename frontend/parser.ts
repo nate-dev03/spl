@@ -60,7 +60,7 @@ export default class Parser {
     }
   }
   parse_var_declaration(): Stmt {
-    const isConstant = 
+    const isConstant = this.eat()
   }
 
   private parse_expr(): Expr {
