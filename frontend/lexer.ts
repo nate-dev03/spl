@@ -1,9 +1,9 @@
 export enum TokenType {
   // Literal types
-  Number = 0,
-  Identifier = 1,
+  Number,
+  Identifier,
 
-  BinaryOperator = 2,
+  BinaryOperator,
   Equals,
   OpenParen,
   CloseParen,
