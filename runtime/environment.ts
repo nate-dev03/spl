@@ -8,6 +8,6 @@ export default class Environment {
 
     constructor(parentENV?: Environment) {
         this.parent = parentENV;
-        this.variables = 
+        this.variables = new Map();
     }
 }
