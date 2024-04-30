@@ -11,5 +11,5 @@ export default class Environment {
         this.variables = new Map();
     }
 
-    
+    public declareVar(varname: string, )
 }
