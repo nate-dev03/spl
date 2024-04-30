@@ -1,4 +1,5 @@
 import Parser from "./frontend/parser.ts";
+import Environment from "./runtime/environment.ts";
 import { evaluate } from "./runtime/interpreter.ts";
 
 /**
@@ -12,6 +13,7 @@ repl();
 
 function repl() {
   const parser = new Parser();
+  const env = new Environment();
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
