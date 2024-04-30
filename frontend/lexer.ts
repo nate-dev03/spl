@@ -4,8 +4,8 @@ export enum TokenType {
   Identifier = 1,
 
   BinaryOperator = 2,
-  Equals = 3,
-  OpenParen = 4,
+  Equals,
+  OpenParen,
   CloseParen,
 
   // Keywords
