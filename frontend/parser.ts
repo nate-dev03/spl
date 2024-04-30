@@ -98,7 +98,7 @@ export default class Parser {
   private parse_expr(): Expr {
     const left = this.parse_additive_expr(); // switch this out with objectExpr
 
-    
+    if ()
   }
 
   private parse_assignment_expr(): Expr {
