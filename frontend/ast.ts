@@ -27,7 +27,9 @@ export interface VarDeclaration extends Stmt {
 
 export interface Expr extends Stmt {}
 
-export interface AssignmentExpr 
+export interface AssignmentExpr extends Expr {
+  
+}
 
 export interface BinaryExpr extends Expr {
   kind: "BinaryExpr";
