@@ -1,9 +1,9 @@
-import type { NullVal, NumberVal, RuntimeVal } from "./values.ts";
+import { MK_NULL, type NullVal, type NumberVal, type RuntimeVal } from "./values.ts";
 import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 import type Environment from "./environment.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
-  let lastEvaluated: RuntimeVal = { type: "null", value: null} as NullVal;
+  let lastEvaluated: RuntimeVal = MK_NULL();
   for (const stmt of program.body) {
     lastEvaluated = evaluate(stmt, env);
   }
