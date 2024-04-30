@@ -14,11 +14,11 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
 
   if (operator === "+") {
     result = lhs.value + rhs.value;
-  } else if (operator == "-") {
+  } else if (operator === "-") {
     result = lhs.value - rhs.value;
-  } else if (operator == "*") {
+  } else if (operator === "*") {
     result = lhs.value * rhs.value;
-  } else if (operator == "/") {
+  } else if (operator === "/") {
     if (rhs.value != 0) {
       result = lhs.value / rhs.value;
     } else {
