@@ -33,5 +33,5 @@ export function MK_NUMBER(n = 0) {
 
 export interface ObjectVal extends RuntimeVal {
   type: "object";
-  props: Map<string, 
+  props: Map<string, RuntimeVal>;
 }
