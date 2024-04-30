@@ -52,8 +52,9 @@ export default class Parser {
 
   private parse_stmt(): Stmt {
     switch (this.at().type) {
+      
       default:
-        this.parse_expr();
+        return this.parse_expr();
     }
   }
 
