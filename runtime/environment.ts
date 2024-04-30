@@ -4,10 +4,11 @@ export default class Environment {
   private parent?: Environment;
   private variables: Map<string, RuntimeVal>;
   private constants: Set<string>;
-  
+
   constructor(parentENV?: Environment) {
     this.parent = parentENV;
     this.variables = new Map();
+    this.constants 
   }
 
   public declareVar(
