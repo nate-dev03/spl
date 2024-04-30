@@ -85,7 +85,7 @@ export default class Parser {
     
     const declaration = {
       kind: "VarDeclaration",
-      value: this.parse_expr(),
+      value: this.parse_expr(),\
       constant: isConstant,
     } as VarDeclaration;
 
