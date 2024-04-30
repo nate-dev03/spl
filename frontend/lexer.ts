@@ -74,6 +74,8 @@ export function tokenize(sourceCode: string): Token[] {
       tokens.push(token(TokenType.Semicolon, char));
     } else if (char == ":") {
       tokens.push(token(TokenType.Colon, char));
+    } else if (char == ",") {
+      
     }
     // Handle multicharacter keywords, tokens, identifiers, etc.
     } else {
