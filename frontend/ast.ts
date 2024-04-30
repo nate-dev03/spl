@@ -1,7 +1,7 @@
 export type NodeType =
   // Statements
   | "Program"
-  | "VarDeclaration",
+  | "VarDeclaration"
 
   // Expressions
   | "NumericLiteral"
