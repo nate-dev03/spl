@@ -1,5 +1,7 @@
 export type NodeType =
+  
   | "Program"
+
   // Expressions
   | "NumericLiteral"
   | "Identifier"
