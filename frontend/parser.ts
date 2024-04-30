@@ -117,7 +117,7 @@ export default class Parser {
     }
 
     this.eat(); // advance past open brace.
-    
+    const properties = new Array<Property>();
   }
 
   private parse_additive_expr(): Expr {
