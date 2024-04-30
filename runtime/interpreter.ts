@@ -10,6 +10,7 @@ import type {
 import type Environment from "./environment.ts";
 import { eval_program, eval_var_declaration } from "./eval/statements.ts";
 import {
+eval_assignment,
   eval_binary_expr,
   eval_identifier,
 } from "./eval/expressions.ts";
@@ -23,6 +24,8 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
       } as NumberVal;
     case "Identifier":
       return eval_identifier(astNode as Identifier, env);
+    case "AssignmentExpr":
+      return eval_assignment
     case "BinaryExpr":
       return eval_binary_expr(astNode as BinaryExpr, env);
     case "Program":
