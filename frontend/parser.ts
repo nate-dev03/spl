@@ -122,7 +122,7 @@ export default class Parser {
     const properties = new Array<Property>();
 
     while (this.not_eof() && this.at().type !== TokenType.CloseBrace) {
-        
+      const key = this.parse_
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
