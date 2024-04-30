@@ -127,7 +127,7 @@ export default class Parser {
       // Allows shorthand key: pair -> key,
       if (this.at().type === TokenType.Comma) {
         this.eat(); // advance past comma
-        properties.push({ key, kind: "Property" } as Property);
+        properties.push({ key, kind: "Property" });
         continue;
       } // Allows shorthand key: pair -> { key },
       else if (this.at().type === TokenType.CloseBrace) {        
