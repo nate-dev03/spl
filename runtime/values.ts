@@ -14,7 +14,7 @@ export function MK_NULL() {
 }
 
 export interface BooleanVal extends RuntimeVal {
-  type: boolean";
+  type: "boolean";
   value: boolean;
 }
 
