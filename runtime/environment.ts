@@ -1,4 +1,4 @@
-import type { RuntimeVal } from "./value.ts";
+import type { RuntimeVal } from "./values.ts";
 
 
 export default class Environment {
