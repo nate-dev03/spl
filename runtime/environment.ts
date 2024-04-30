@@ -25,7 +25,7 @@ export default class Environment {
         
     }
 
-    public function resolve(varname: string): Environment {
-        
+    public resolve(varname: string): Environment {
+        if 
     }
 }
