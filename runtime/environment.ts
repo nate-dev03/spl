@@ -13,7 +13,9 @@ export default class Environment {
 
     public declareVar(varname: string, value: RuntimeVal): RuntimeVal {
         if (this.variables.has(varname)) {
-            throw `Cannot declare variable ${varname}. As it already defined.`
+            throw `Cannot declare variable ${varname}. As it already defined.`;
         }
+
+        
     }
 }
