@@ -1,4 +1,4 @@
-import { MK_NULL, type NullVal, type NumberVal, type RuntimeVal } from "./values.ts";
+import { MK_NULL, type NullVal,\type NumberVal, type RuntimeVal } from "./values.ts";
 import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt } from "../frontend/ast.ts";
 import type Environment from "./environment.ts";
 
