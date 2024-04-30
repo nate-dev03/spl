@@ -125,7 +125,7 @@ export default class Parser {
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
-    return { }
+    return { } as OBj
   }
 
   private parse_additive_expr(): Expr {
