@@ -103,7 +103,6 @@ export default class Parser {
       case TokenType.Identifier:
         return { kind: "Identifier", symbol: this.eat().value } as Identifier;
 
-    
       case TokenType.Number:
         return {
           kind: "NumericLiteral",
