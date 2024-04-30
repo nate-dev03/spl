@@ -1,6 +1,6 @@
 import type { RuntimeVal } from "./values.ts";
 
-function setupGlo
+function setupSco
 
 export default class Environment {
   private parent?: Environment;
