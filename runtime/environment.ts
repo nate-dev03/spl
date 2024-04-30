@@ -21,5 +21,5 @@ export default class Environment {
         return value;
     }
 
-    public 
+    public assignVar()
 }
