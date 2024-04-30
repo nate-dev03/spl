@@ -3,7 +3,7 @@ import type { BinaryExpr, Identifier, NumericLiteral, Program, Stmt } from "../f
 import type Environment from "./environment.ts";
 
 function eval_program(program: Program, env: Environment): RuntimeVal {
-  let lastEvaluated: RuntimeVal = { type: "null", value: "null"} as NullVal;
+  let lastEvaluated: RuntimeVal = { type: "null", value: null} as NullVal;
   for (const stmt of program.body) {
     lastEvaluated = evaluate(stmt, env);
   }
