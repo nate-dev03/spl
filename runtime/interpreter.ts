@@ -71,3 +71,7 @@ export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
       Deno.exit(1);
   }
 }
+
+function eval_var_declaration(arg0: VarDeclaration, env: Environment): RuntimeVal {
+  throw new Error("Function not implemented.");
+}
