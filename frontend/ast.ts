@@ -17,6 +17,10 @@ export interface Program extends Stmt {
   body: Stmt[];
 }
 
+export interface Program extends Stmt {
+  kind: "Program";
+  body: Stmt[];
+}
 
 export interface Expr extends Stmt {}
 
