@@ -15,7 +15,7 @@ repl();
 function repl() {
   const parser = new Parser();
   const env = new Environment();
-  env.declareVar("x", { value: 100, type: 'number'} as NumberVal);
+  env.declareVar("x", { value: 1 as NumberVal);
   console.log("\nRepl v0.1");
   while (true) {
     const input = prompt("> ");
