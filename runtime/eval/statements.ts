@@ -15,5 +15,5 @@ export function eval_var_declaration(
   declaration: VarDeclaration,
   env: Environment,
 ): RuntimeVal {
-    env.declareVar(e)
+    env.declareVar(declaration.identifier, declaration.value);
 }
