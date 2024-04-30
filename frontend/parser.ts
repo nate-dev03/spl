@@ -124,13 +124,14 @@ export default class Parser {
     while (this.not_eof() && this.at().type !== TokenType.CloseBrace) {
       const key = this.expect(TokenType.Identifier, "Object literal key expected.").value;
 
+      
       if (this.at().type === TokenType.Comma) {
         this.eat(); // advance past comma
         properties.push({ key, kind: "Property", value: undefined } as Property);
         continue;
       }
 
-      
+
     }
 
     this.expect(TokenType.CloseBrace, "Object literal missing closing brace.");
