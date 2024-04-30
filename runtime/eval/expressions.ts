@@ -21,7 +21,7 @@ function eval_numeric_binary_expr(lhs: NumberVal, rhs: NumberVal, operator: stri
     return { value: result, type: "number" };
   }
   
-  function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
+  export function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
     const lhs = evaluate(binop.left, env);
     const rhs = evaluate(binop.right, env);
   
