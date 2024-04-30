@@ -52,12 +52,6 @@ export default class Parser {
 
   private parse_stmt(): Stmt {
     switch (this.at().type) {
-      case TokenType.Number:
-      case TokenType.Identifier:
-      case TokenType.BinaryOperator:
-      case TokenType.Equals:
-      case TokenType.OpenParen:
-      case TokenType.CloseParen:
       case TokenType.Let:
       case TokenType.Const:
       default:
