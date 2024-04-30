@@ -6,10 +6,10 @@ export enum TokenType {
 
   BinaryOperator,
   Equals,
-  Comma,
-  
+  Comma, Colon,
   OpenParen,
   CloseParen,
+  
   Semicolon,
 
   // Keywords
