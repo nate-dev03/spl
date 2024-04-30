@@ -83,7 +83,7 @@ export function eval_object_expr(
 
     // handles valid key: pair
     if (value) {
-      ob
+      object.props.set
     }
   }
 
