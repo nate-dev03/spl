@@ -79,7 +79,9 @@ export function eval_object_expr(
 ): RuntimeVal {
   const object = { type: "object", props: new Map()} as ObjectVal;
 
-  for (const prop of obj.props) 
+  for (const { key, value } of obj.props) {
+    
+  }
 
   return object;
 }
