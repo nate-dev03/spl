@@ -60,7 +60,6 @@ export default class Parser {
       case TokenType.CloseParen:
       case TokenType.Let:
       case TokenType.Const:
-      case TokenType.EOF:
       default:
         return this.parse_expr();
     }
