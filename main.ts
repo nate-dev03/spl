@@ -16,7 +16,6 @@ run("./text.txt");
 async function run(filename: string) {
   const parser = new Parser();
   const env = new Environment();
-  
 
   const input = await Deno.readTextFile(filename);
   const program = parser.produceAST(input);
