@@ -12,7 +12,6 @@ import { eval_program, eval_var_declaration } from "./eval/statements.ts";
 import {
   eval_binary_expr,
   eval_identifier,
-  eval_numeric_binary_expr,
 } from "./eval/expressions.ts";
 
 export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
