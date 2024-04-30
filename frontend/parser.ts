@@ -139,7 +139,7 @@ export default class Parser {
       this.expect(TokenType.Colon, "Missing colon following identifier in ObjectLiteral.");
       const value = this.parse_expr();
 
-      properties.push({} )
+      properties.push({ kind: "Property", value, } )
 
     }
 
