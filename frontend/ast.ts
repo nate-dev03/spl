@@ -4,7 +4,7 @@ export type NodeType =
   | "VarDeclaration"
 
   // Expressions
-  
+  | 
   | "NumericLiteral"
   | "Identifier"
   | "BinaryExpr";
