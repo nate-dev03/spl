@@ -9,8 +9,8 @@ export interface NullVal extends RuntimeVal {
   value: null;
 }
 
-export function MK_NULL(n = 0) {
-  return { type: "null", value: null } as NumberVal;
+export function MK_NULL() {
+  return { type: "null", value: null } as NullVal;
 }
 
 export interface NumberVal extends RuntimeVal {
