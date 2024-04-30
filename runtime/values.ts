@@ -18,7 +18,7 @@ export interface BoolVal extends RuntimeVal {
   value: null;
 }
 
-export function MK_NULL() {
+export function MK_BOOL() {
   return { type: "null", value: null } as NullVal;
 }
 
