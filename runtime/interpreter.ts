@@ -46,6 +46,7 @@ function eval_binary_expr(binop: BinaryExpr, env: Environment): RuntimeVal {
 
 function eval_identifier(ident: Identifier, env: Environment): RuntimeVal {
   const val = env.lookupVar(ident.symbol);
+  return val;
 }
 
 export function evaluate(astNode: Stmt, env: Environment): RuntimeVal {
