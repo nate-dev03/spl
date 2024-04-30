@@ -16,6 +16,8 @@ export default class Environment {
             throw `Cannot declare variable ${varname}. As it already defined.`;
         }
 
-        
+        this.variables.set(varname, value);
+
+        return value;
     }
 }
