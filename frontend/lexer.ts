@@ -1,17 +1,17 @@
 export enum TokenType {
   // Literal types
-  Number,
-  Identifier,
+  Number = 0,
+  Identifier = 1,
 
-  BinaryOperator,
-  Equals,
-  OpenParen,
-  CloseParen,
+  BinaryOperator = 2,
+  Equals = 3,
+  OpenParen = 4,
+  CloseParen = 5,
 
   // Keywords
-  Let,
+  Let = 6,
 
-  EOF, // Signifies the end of file
+  EOF = 7, // Signifies the end of file
 }
 
 const KEYWORDS: Record<string, TokenType> = {
